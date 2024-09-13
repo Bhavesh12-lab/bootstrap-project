@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0px;
+    left: 6px;
+    background-color: #feb900;
+    transition: all 0.4s linear;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    background-color: #feb900;
+}
+
+
+/* banner */
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/hero-carousel-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.p2 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/hero-carousel-2.jpg');
+}
+
+.p3 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/hero-carousel-3.jpg');
+}
+
+.p4 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/hero-carousel-4.jpg');
+}
+
+.p5 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/hero-carousel-5.jpg');
+}
+
+.line {
+    display: inline-block;
+    width: 90px;
+    height: 4px;
+    background-color: #feb900;
+}
+
+.ray h1 {
+    font-family: roboto;
+}
+
+.ray h2 {
+    font-family: roboto;
+}
+
+.ray p {
+    font-family: roboto;
+    width: 89%;
+    margin: auto;
+}
+
+.carousel-item a {
+    border: 2px solid #feb900;
+    padding: 12px 45px;
+}
+
+.carousel-item a:hover {
+    background-color: #feb900;
+    width: 0;
+}
+
+/* blog */
+
+.blog p {
+    width: 764px;
+}
+
+.blog h2::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 469px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.blog h2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 469px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+/* services */
+
+.bg {
+    background-color: #f5f6f7;
+}
+
+.services h2::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 504px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.services h2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 504px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.icon i {
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.1;
+    color: #52565e;
+}
+
+.icon:before {
+    position: absolute;
+    content: '';
+    height: 50px;
+    width: 50px;
+    background: #f0f1f2;
+    border-radius: 50px;
+    z-index: 1;
+    top: -4px;
+    left: 21px;
+    transition: 0.3s;
+}
+
+.service-item:hover h4::before {
+    background-color: #feb900 !important;
+}
+
+.service-item h4::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #f0f1f2;
+    width: 100%;
+    height: 5px;
+}
+
+.service-item:hover .icon:before {
+    background-color: #feb900 !important;
+}
+
+.service-item h4 {
+    display: inline-block;
+}
+
+.service-item a {
+    color: #feb900;
+}
+
+.service-item {
+    margin: 12px 0;
+}
+
+
+.about-title:before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #feb900;
+    width: 12%;
+    height: 3px;
+}
+
+.about-plan:hover .icon-box i {
+    background-color: #feb900 !important;
+    color: white !important;
+}
+
+.about-plan:hover .about-content a {
+    color: #feb900 !important;
+}
+
+.about-mission:hover .about-content a {
+    color: #feb900 !important;
+}
+
+.about-vision:hover .about-content a {
+    color: #feb900 !important;
+}
+
+.about-learn:hover .about-content a {
+    color: #feb900 !important;
+}
+
+.about-mission:hover .icon-box i {
+    background-color: #feb900 !important;
+    color: white !important;
+}
+
+.about-plan:hover .icon-box i {
+    background-color: #feb900 !important;
+    color: white !important;
+}
+
+.about-vision:hover .icon-box i {
+    background-color: #feb900 !important;
+    color: white !important;
+}
+
+.about-learn:hover .icon-box i {
+    background-color: #feb900 !important;
+    color: white !important;
+}
+
+
+.about-title p {
+    width: 92%;
+}
+
+.icon-box i {
+    color: #feb900;
+    padding: 16px 14px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    line-height: 80%;
+    margin-right: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.about-content p {
+    font-size: 14px;
+    width: 103%;
+}
+
+.content h3 {
+    width: 75%;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    top: 77px;
+    left: 0;
+    background-color: #feb900;
+    width: 12%;
+    height: 5%;
+}
+
+button {
+    background: #feb900;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+form {
+    padding: 30px;
+    height: 100%;
+}
+
+.recent h2::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 442px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+
+.recent h2::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 442px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.post-img {
+    overflow: hidden;
+}
+
+.post-img img {
+    transition: all 0.5s linear;
+}
+
+.blogpost:hover .post-img img {
+    transform: scale(1.1);
+}
+
+.blogpost:hover .postman h4 {
+    color: #feb900 !important;
+}
+
+.blogpost:hover .postman a {
+    color: #feb900 !important;
+}
+
+
+.postman {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    padding: 30px;
+}
+
+.project-title h2::before,
+.review-title h2::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 480px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.project-title h2::after,
+.review-title h2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 480px;
+    background-color: #feb900;
+    width: 60px;
+    height: 2px;
+}
+
+.project-title p {
+    width: 60%;
+    margin: auto;
+}
+
+.project-overlay h6 {
+    background-color: #feb900;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.project-overlay p {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+.project-overlay {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.624);
+    visibility: hidden;
+}
+
+.project-image:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.project-image img {
+    transition: all 0.5s linear;
+}
+
+.project-image {
+    position: relative !important;
+    overflow: hidden;
+}
+
+.portfolio-content:hover .project-image img {
+    transform: scale(1.1);
+}
+
+
+/* work */
+
+
+.work .nav-tabs a {
+    color: #52565e !important;
+    font-weight: 600;
+}
+
+.nav-tabs {
+    border: 0 !important;
+}
+
+.work-title a {
+    font-size: 18px !important;
+}
+
+.work-content ul i {
+    font-size: 20px;
+    padding-right: 8px !important;
+}
+
+.work-content ul li {
+    padding: 5px 0 !important;
+}
+
+.work-content h2:before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #feb900;
+    width: 68px;
+    height: 3px;
+}
+
+.review-content h6 {
+    font-size: 14px !important;
+}
+
+.review-img img {
+    width: 90px;
+    border-radius: 10px;
+    border: 6px solid white !important;
+}
+
+.review-img {
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.carousel-indicators .active {
+    background-color: #feb900 !important;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #feb900 !important;
+}
+
+.work-title:hover a {
+    color: #feb900 !important;
+    border-color: #feb900 !important;
+}
+
+/* .footer */
+
+footer {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.828), rgba(0, 0, 0, 0.778)), url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-content .footer-icon i {
+    background: rgb(255 254 255 / 10%);
+    padding: 5px;
+}
+
+.footer-icon i:hover {
+    background-color: #feb900 !important;
+}
+
+.footer-content ul li:hover {
+    color: white !important;
+}
