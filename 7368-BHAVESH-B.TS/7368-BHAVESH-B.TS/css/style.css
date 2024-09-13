@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+
+nav ul li a {
+    font-size: 14px !important;
+    transition: all 0.5s linear;
+}
+
+nav ul li a:hover {
+    color: #18d26e !important;
+}
+
+.logo a {
+    border-left: 4px solid #18d26e !important;
+    padding-left: 10px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    padding-left: 0 !important;
+}
+
+.service-menu,
+.design-menu {
+    width: 180px;
+    background-color: white;
+    margin-top: 5px;
+    height: 180px;
+    width: 200px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+    transform: translateY(30px);
+}
+
+.design-menu {
+    left: 110%;
+    top: 0;
+    width: 180px;
+    height: 140px;
+    padding-top: 10px !important;
+}
+
+.service:hover .service-menu,
+.design:hover .design-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* bannner */
+
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide2 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/2.jpg');
+}
+
+.slide3 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/3.jpg');
+}
+
+.slide4 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/4.jpg');
+}
+
+.slide5 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)), url('../images/5.jpg');
+}
+
+.banner-content a {
+    background-color: #18d26e;
+    padding: 10px 50px !important;
+    font-size: 15px !important;
+}
+
+.banner-content p {
+    font-size: 17px !important;
+}
+
+/* features */
+.features {
+    background-color: #000;
+}
+
+.feature-content i {
+    font-size: 40px;
+    color: #18d26e;
+}
+
+.features .col-lg-4:nth-child(2) {
+    background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%)
+}
+
+/* about */
+
+.about {
+    background-image: url('../images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.about-title::before,
+.service-title::before,
+.skill-title::before,
+.facts-title::before,
+.portfolio-title::before,
+.clint-title::before,
+.test-title::before,
+.team-title::before,
+.contact-title::before {
+    content: '';
+    position: absolute;
+    top: 47px;
+    right: 603px;
+    width: 120px;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.about-title::after,
+.service-title::after,
+.skill-title::after,
+.facts-title::after,
+.portfolio-title::after,
+.clint-title::after,
+.test-title::after,
+.team-title::after,
+.contact-title::after {
+    content: '';
+    position: absolute;
+    top: 46px;
+    right: 638px;
+    width: 50px;
+    height: 3px;
+    background-color: #18d26e;
+}
+
+.icon-bar {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translateY(-20px);
+}
+
+.icon-bar i {
+    border-radius: 50%;
+    background-color: #18d26e !important;
+    color: white !important;
+    padding: 10px;
+    transition: all 0.5s linear;
+}
+
+.about-content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-content .card:hover .card-body .icon-bar i {
+    background-color: white !important;
+    color: #18d26e !important;
+}
+
+.about-content .card {
+    border: none;
+}
+
+/* services */
+
+.service-content i {
+    color: #18d26e;
+    font-size: 36px;
+}
+
+.service p {
+    font-size: 15px !important;
+}
+
+/* action */
+
+.action {
+    background-image: url('../images/call-to-action-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.action-title a:hover {
+    border-color: #18d26e !important;
+    background-color: #18d26e !important;
+}
+
+.count h3 {
+    color: #18d26e;
+}
+
+.city {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.765), rgba(255, 255, 255, 0.765)), url('../images/facts-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* portfolio */
+.portfolio {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.portfolio ul li:first-child a {
+    background-color: #18d26e !important;
+}
+
+.portfolio ul li a {
+    font-size: 12px !important;
+}
+
+.portpolio-overlay {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.624);
+    visibility: hidden;
+}
+
+.portpolio-overlay i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.portfolio-image:hover .portpolio-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-image:hover .portpolio-overlay i {
+    margin: 0 10px;
+}
+
+.portfolio ul li a:hover {
+    background-color: #18d26e !important;
+    color: white !important;
+}
+
+/* clint */
+.clint .carousel-indicators .active {
+    background-color: #18d26e !important;
+}
+
+.clint .carousel-indicators {
+    bottom: -50px;
+}
+
+.clint .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #18d26e;
+}
+
+/* TESTIMONIALS */
+
+.test {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.clint-img img:hover {
+    opacity: 1 !important;
+}
+
+.test-content img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.test-content h6 {
+    color: #999;
+}
+
+.test-content i {
+    color: #9999994e;
+    font-size: 25px;
+}
+
+.test .carousel-indicators .active {
+    background-color: #18d26e !important;
+}
+
+.test .carousel-indicators {
+    bottom: -50px;
+}
+
+.test .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #18d26e;
+}
+
+/* team */
+
+.overlay-team i {
+    font-size: 20px;
+}
+
+.overlay-team p {
+    font-size: 14px;
+}
+
+.overlay-team {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.579);
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: all 0.3s linear;
+}
+
+.team-image:hover .overlay-team {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-20px);
+}
+
+.team-image {
+    overflow: hidden;
+}
+
+/* contact */
+.contact-item i {
+    color: #18d26e;
+}
+
+.contact-item p {
+    font-size: 14px;
+}
+
+.contact {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.form-btn a {
+    background-color: #18d26e;
+    display: inline;
+    padding: 10px 25px;
+}
+
+/* footer */
+footer {
+    background-color: #111;
+}
+
+.footer-logo {
+    padding-left: 0 !important;
+}
+
+.footer-logo a {
+    border-left: 4px solid #18d26e !important;
+    padding-left: 10px !important;
+}
+
+.footer-content h6::before {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+}
+
+.footer-content h6::after {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #18d26e;
+}
+
+.footer-icon i {
+    background-color: #333 !important;
+}
+
+.footer-content .input-group button {
+    background-color: #18d26e !important;
+}
+
+.footer-content ul li a:hover {
+    color: #18d26e !important;
+}
+
+.footer-icon i:hover {
+    background-color: #18d26e !important;
+}
+
+.back-to-up {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 45px;
+    position: fixed;
+    transition: all 0.5s linear;
+    right: 0px;
+    bottom: 40px;
+}
+
+.back-to-up a {
+    color: white;
+    font-size: 20px;
+}
+
+.back-to-up:hover {
+    background-color: #18d26e !important;
+}

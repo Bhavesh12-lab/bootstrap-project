@@ -1,0 +1,140 @@
+       /* XS */
+       @media(max-width:575px) {
+           .container {
+               max-width: 100%;
+           }
+
+           .banner-content h2 {
+               font-size: 22px !important;
+           }
+
+           .banner-content a {
+               font-size: 14px !important;
+               padding: 7px 20px !important;
+               margin-bottom: 10px !important;
+           }
+
+           .banner-content p {
+               font-size: 14px !important;
+           }
+
+           .about-content .card {
+               margin-bottom: 20px;
+           }
+       }
+
+       /* SM */
+       @media(min-width:576px) {
+           .container {
+               max-width: 540px;
+           }
+
+           .banner-content h2 {
+               font-size: 25px !important;
+           }
+
+           .banner-content p {
+               font-size: 14px !important;
+           }
+
+           .about-content .card {
+               margin-bottom: 20px;
+           }
+
+           .col-sm-6 {
+               max-width: 50%;
+           }
+
+           .col-lg-12 {
+               max-width: 100%s;
+           }
+
+           .team-image img {
+               margin-bottom: 20px;
+           }
+
+       }
+
+       /* MD */
+       @media(min-width:768px) {
+           .container {
+               max-width: 720px;
+           }
+
+           .banner-content h2 {
+               font-size: 29px !important;
+           }
+
+           .banner-content p {
+               font-size: 18px !important;
+           }
+
+           .about-content .card {
+               margin-bottom: 20px;
+           }
+
+           .col-md-6 {
+               max-width: 50%;
+           }
+
+           .col-md-4 {
+               max-width: 33%;
+           }
+
+           .team-image img {
+               margin-bottom: 20px;
+           }
+
+       }
+
+       /* LG */
+       @media(min-width:992px) {
+           .container {
+               max-width: 960px;
+           }
+
+           .banner-content h2 {
+               font-size: 34px !important;
+           }
+
+           .banner-content p {
+               font-size: 18px !important;
+           }
+
+           .col-lg-4 {
+               max-width: 33.33%;
+           }
+       }
+
+       /* XL */
+       @media(min-width:1200px) {
+           .container {
+               max-width: 1140px;
+           }
+
+           .banner-content h2 {
+               font-size: 43px !important;
+           }
+
+           .banner-content a {
+               font-size: 14px;
+               padding: 10px 20px;
+               margin-bottom: 10px;
+           }
+
+           .banner-content p {
+               font-size: 18px !important;
+           }
+
+       }
+
+       /* XXL */
+       @media(min-width:1400px) {
+           .container {
+               max-width: 1320px;
+           }
+
+           .banner-content p {
+               font-size: 18px !important;
+           }
+       }
